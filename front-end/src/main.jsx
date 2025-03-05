@@ -1,15 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { App } from "./App";
 
 const router = createBrowserRouter([
   {
-    element: <p>Hi !!! 🐸</p>,
+    element: <App />,
     path: "/", // This is the root path
-  },
-  {
-    element: <i>Bye !!! 🐨</i>,
-    path: "/bye", // This is the /bye path
   },
 ]);
 
