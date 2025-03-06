@@ -11,7 +11,7 @@ const router = createBrowserRouter([
   },
   {
     element: <NotesList />,
-    path: "/notes",
+    path: "/notes/:folderId",
   },
 ]);
 
