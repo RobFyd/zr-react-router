@@ -1,4 +1,5 @@
 import styles from "./NotesList.module.css";
+
 import { Title } from "../title/Title";
 import { AddNewButton } from "../add-new-button/AddNewButton";
 import { TopBar } from "../top-bar/TopBar";

@@ -8,6 +8,9 @@ const router = createBrowserRouter([
   {
     element: <App />,
     path: "/", // This is the root path
+    loader: () => {
+      return ["a", "b"];
+    },
     children: [
       {
         element: <NotesList />,
