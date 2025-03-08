@@ -9,7 +9,7 @@ const router = createBrowserRouter([
     element: <App />,
     path: "/", // This is the root path
     loader: () => {
-      return ["a", "b"];
+      return fetch("http://localhost:3000/folders");
     },
     children: [
       {

@@ -15,9 +15,7 @@ const UserCreatedFolders = ({ children }) => (
 );
 
 const FoldersList = () => {
-  const folders = [];
-  const loaderData = useLoaderData();
-  console.log(loaderData);
+  const folders = useLoaderData();
 
   return (
     <Folders>
