@@ -63,7 +63,7 @@ const NotesList = () => {
     <NotesContainer>
       <Notes>
         <TopBar>
-          <Title>Notatki</Title>
+          <Title>Notes</Title>
 
           <AddNewButton>+</AddNewButton>
         </TopBar>

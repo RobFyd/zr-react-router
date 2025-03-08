@@ -18,7 +18,7 @@ const UserCreatedFolders = ({ children }) => (
 const FoldersList = () => {
   const [folders] = useState([
     {
-      name: "Letters",
+      name: "Lists",
       id: 1,
     },
     {
@@ -40,8 +40,10 @@ const FoldersList = () => {
 
       <Title>Folders</Title>
       <UserCreatedFolders>
-        {folders.map((folder, idx) => (
-          <Folder key={idx}>{folder.name}</Folder>
+        {folders.map((folder) => (
+          <a key={folder.id} href={`/notes/${folder.id}`}>
+            <Folder>{folder.name}</Folder>
+          </a>
         ))}
       </UserCreatedFolders>
       {/* <Folder icon="archive">Archiwum</Folder> */}
