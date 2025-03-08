@@ -1,6 +1,5 @@
 import styles from "./FoldersList.module.css";
 
-import { useState } from "react";
 import { Folder } from "../folder/Folder";
 import { Title } from "../title/Title";
 import { TopBar } from "../top-bar/TopBar";
@@ -17,16 +16,7 @@ const UserCreatedFolders = ({ children }) => (
 );
 
 const FoldersList = () => {
-  const [folders] = useState([
-    {
-      name: "Lists",
-      id: 1,
-    },
-    {
-      name: "Thoughts",
-      id: 2,
-    },
-  ]);
+  const folders = [];
 
   return (
     <Folders>
