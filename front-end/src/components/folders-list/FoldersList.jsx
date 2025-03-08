@@ -5,7 +5,7 @@ import { Folder } from "../folder/Folder";
 import { Title } from "../title/Title";
 import { TopBar } from "../top-bar/TopBar";
 import { AddNewButton } from "../add-new-button/AddNewButton";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Folders = ({ children }) => (
   <div className={styles["folders-column"]}>{children}</div>
@@ -42,9 +42,11 @@ const FoldersList = () => {
       <Title>Folders</Title>
       <UserCreatedFolders>
         {folders.map((folder) => (
-          <Link key={folder.id} to={`/notes/${folder.id}`}>
-            <Folder>{folder.name}</Folder>
-          </Link>
+          <NavLink key={folder.id} to={`/notes/${folder.id}`}>
+            {({ isActive }) => {
+              return <Folder active={isActive}>{folder.name}</Folder>;
+            }}
+          </NavLink>
         ))}
       </UserCreatedFolders>
       {/* <Folder icon="archive">Archiwum</Folder> */}
