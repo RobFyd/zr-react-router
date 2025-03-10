@@ -15,6 +15,11 @@ const router = createBrowserRouter([
       {
         element: <NotesList />,
         path: "/notes/:folderId",
+        loader: ({ params }) => {
+          return fetch(
+            `http://localhost:3000/notes?folderId=${params.folderId}`
+          );
+        },
       },
     ],
   },
