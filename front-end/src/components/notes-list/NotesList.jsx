@@ -17,7 +17,7 @@ const Notes = ({ children }) => (
   </div>
 );
 
-const NotesList = () => {
+export function NotesList() {
   const notes = useLoaderData();
 
   return (
@@ -36,6 +36,6 @@ const NotesList = () => {
       <Note />
     </NotesContainer>
   );
-};
+}
 
 export default NotesList;
