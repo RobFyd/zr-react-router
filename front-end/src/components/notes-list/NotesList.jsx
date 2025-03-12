@@ -4,8 +4,7 @@ import { Title } from "../title/Title";
 import { AddNewButton } from "../add-new-button/AddNewButton";
 import { TopBar } from "../top-bar/TopBar";
 import { ShortNote } from "../short-note/ShortNote";
-import { Note } from "../note/Note";
-import { useParams, useLoaderData, NavLink } from "react-router-dom";
+import { useParams, useLoaderData, NavLink, Outlet } from "react-router-dom";
 
 const NotesContainer = ({ children }) => (
   <div className={styles["notes-container"]}>{children}</div>
@@ -41,7 +40,7 @@ export function NotesList() {
           </NavLink>
         ))}
       </Notes>
-      <Note />
+      <Outlet />
     </NotesContainer>
   );
 }
