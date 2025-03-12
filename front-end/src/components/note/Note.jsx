@@ -12,9 +12,11 @@ export function Note() {
   return (
     <div className={styles.container}>
       <TopBar>
-        <button className={styles.button}>
-          <img className={styles.image} src={RemoveIcon} />
-        </button>
+        <Form method="DELETE" action="delete">
+          <button className={styles.button}>
+            <img className={styles.image} src={RemoveIcon} />
+          </button>
+        </Form>
       </TopBar>
 
       <NoteEditor key={note.id}>
