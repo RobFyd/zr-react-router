@@ -3,7 +3,7 @@ import { Folder } from "../folder/Folder";
 import { Title } from "../title/Title";
 import { TopBar } from "../top-bar/TopBar";
 import { AddNewButton } from "../add-new-button/AddNewButton";
-import { Link, NavLink, useLoaderData } from "react-router-dom";
+import { Link, NavLink, useLoaderData, Form } from "react-router-dom";
 
 const Folders = ({ children }) => (
   <div className={styles["folders-column"]}>{children}</div>
@@ -20,12 +20,14 @@ const FoldersList = () => {
   return (
     <Folders>
       <TopBar>
-        <input
-          className={styles["new-folder-input"]}
-          type="text"
-          placeholder="Folder name"
-        />
-        <AddNewButton type="submit">+</AddNewButton>
+        <Form method="POST" action="/">
+          <input
+            className={styles["new-folder-input"]}
+            type="text"
+            placeholder="Folder name"
+          />
+          <AddNewButton type="submit">+</AddNewButton>
+        </Form>
       </TopBar>
 
       <Title>Folders</Title>
