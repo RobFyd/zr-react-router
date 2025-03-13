@@ -14,10 +14,11 @@ const UserCreatedFolders = ({ children }) => (
   </div>
 );
 
-export function createFolder() {
-  return fetch("http://localhost:3000/folders", {
-    method: "POST",
-  });
+export function createFolder(args) {
+  debugger;
+  // return fetch("http://localhost:3000/folders", {
+  //   method: "POST",
+  // });
 }
 
 const FoldersList = () => {
