@@ -14,6 +14,12 @@ const UserCreatedFolders = ({ children }) => (
   </div>
 );
 
+export function createFolder() {
+  return fetch("http://localhost:3000/folders", {
+    method: "POST",
+  });
+}
+
 const FoldersList = () => {
   const folders = useLoaderData();
 
@@ -25,6 +31,7 @@ const FoldersList = () => {
             className={styles["new-folder-input"]}
             type="text"
             placeholder="Folder name"
+            name="folder-name"
           />
           <AddNewButton type="submit">+</AddNewButton>
         </Form>
