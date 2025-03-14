@@ -22,13 +22,17 @@ const Notes = ({ children }) => (
   </div>
 );
 
-export function createNote() {
+export function createNote({ params }) {
   return fetch("http://localhost:3000/notes", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({ title: "New note", body: "note content" }),
+    body: JSON.stringify({
+      title: "New note",
+      body: "note content",
+      folderId: Number(params.folderId),
+    }),
   });
 }
 
