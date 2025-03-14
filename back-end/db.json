@@ -44,6 +44,30 @@
       "body": "\n1. Napisać odcinki\n2. Nargrać odcinki",
       "folderId": 1,
       "id": 15
+    },
+    {
+      "title": "New note",
+      "body": "note content",
+      "folderId": 2,
+      "id": 16
+    },
+    {
+      "title": "New note",
+      "body": "note content",
+      "folderId": 3,
+      "id": 17
+    },
+    {
+      "title": "New note",
+      "body": "note content",
+      "folderId": 3,
+      "id": 18
+    },
+    {
+      "title": "New note",
+      "body": "note content",
+      "folderId": 3,
+      "id": 19
     }
   ]
 }
