@@ -14,11 +14,16 @@ const UserCreatedFolders = ({ children }) => (
   </div>
 );
 
-export function createFolder(args) {
-  debugger;
-  // return fetch("http://localhost:3000/folders", {
-  //   method: "POST",
-  // });
+export async function createFolder(args) {
+  const data = await args.request.formData();
+  const folderName = data.get("folder-name");
+  return fetch("http://localhost:3000/folders", {
+    method: "POST",
+    body: JSON.stringify({ name: folderName }),
+    headers: {
+      "Content-type": "application/json",
+    },
+  });
 }
 
 const FoldersList = () => {
