@@ -4,7 +4,13 @@ import { Title } from "../title/Title";
 import { AddNewButton } from "../add-new-button/AddNewButton";
 import { TopBar } from "../top-bar/TopBar";
 import { ShortNote } from "../short-note/ShortNote";
-import { useParams, useLoaderData, NavLink, Outlet } from "react-router-dom";
+import {
+  useParams,
+  useLoaderData,
+  NavLink,
+  Outlet,
+  Form,
+} from "react-router-dom";
 
 const NotesContainer = ({ children }) => (
   <div className={styles["notes-container"]}>{children}</div>
@@ -16,6 +22,16 @@ const Notes = ({ children }) => (
   </div>
 );
 
+export function createNote() {
+  return fetch("http://localhost:3000/notes", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ title: "New note", body: "note content" }),
+  });
+}
+
 export function NotesList() {
   const notes = useLoaderData();
 
@@ -25,7 +41,9 @@ export function NotesList() {
         <TopBar>
           <Title>Notes</Title>
 
-          <AddNewButton>+</AddNewButton>
+          <Form method="POST">
+            <AddNewButton>+</AddNewButton>
+          </Form>
         </TopBar>
 
         {notes.map((note) => (
