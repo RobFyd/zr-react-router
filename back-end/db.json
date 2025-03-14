@@ -11,6 +11,18 @@
     {
       "name": "new folder",
       "id": 3
+    },
+    {
+      "name": "",
+      "id": 4
+    },
+    {
+      "name": "",
+      "id": 5
+    },
+    {
+      "name": "",
+      "id": 6
     }
   ],
   "archive": [],
@@ -68,6 +80,42 @@
       "body": "note content",
       "folderId": 3,
       "id": 19
+    },
+    {
+      "title": "New note",
+      "body": "note content",
+      "folderId": 4,
+      "id": 20
+    },
+    {
+      "title": "New notyyyy",
+      "body": "note content",
+      "folderId": 4,
+      "id": 21
+    },
+    {
+      "title": "New note",
+      "body": "note content",
+      "folderId": 4,
+      "id": 22
+    },
+    {
+      "title": "New note",
+      "body": "note content",
+      "folderId": 4,
+      "id": 23
+    },
+    {
+      "title": "New note",
+      "body": "note content",
+      "folderId": 4,
+      "id": 24
+    },
+    {
+      "title": "New note",
+      "body": "note content",
+      "folderId": 4,
+      "id": 25
     }
   ]
 }

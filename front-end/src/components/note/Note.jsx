@@ -7,7 +7,7 @@ const NoteEditor = ({ children }) => (
   <div className={styles["note-editor"]}>{children}</div>
 );
 
-export async function updateNote(request, params) {
+export async function updateNote({ request, params }) {
   const data = await request.formData();
   const title = data.get("title");
   const body = data.get("body");
