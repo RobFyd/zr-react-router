@@ -18,8 +18,8 @@ const router = createBrowserRouter([
     },
     children: [
       {
-        path: "/notes/:folderId",
         element: <NotesList />,
+        path: "/notes/:folderId",
         action: createNote,
         loader: ({ params }) => {
           return fetch(
@@ -28,9 +28,9 @@ const router = createBrowserRouter([
         },
         children: [
           {
+            element: <Note />,
             path: "note/:noteId",
             action: updateNote,
-            element: <Note />,
             loader: ({ params }) => {
               return fetch(`http://localhost:3000/notes/${params.noteId}`);
             },

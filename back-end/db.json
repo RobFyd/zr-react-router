@@ -23,6 +23,10 @@
     {
       "name": "",
       "id": 6
+    },
+    {
+      "name": "Document",
+      "id": 7
     }
   ],
   "archive": [],
@@ -116,6 +120,18 @@
       "body": "note content",
       "folderId": 4,
       "id": 25
+    },
+    {
+      "title": "te",
+      "body": "\ntent",
+      "folderId": 6,
+      "id": 26
+    },
+    {
+      "title": "Document",
+      "body": "Very new document!",
+      "folderId": 7,
+      "id": 27
     }
   ]
 }
