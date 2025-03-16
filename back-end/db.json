@@ -132,6 +132,18 @@
       "body": "Very new document!",
       "folderId": 7,
       "id": 27
+    },
+    {
+      "title": "New note",
+      "body": "note content",
+      "folderId": 1,
+      "id": 28
+    },
+    {
+      "title": "New note",
+      "body": "note content",
+      "folderId": 1,
+      "id": 29
     }
   ]
 }
