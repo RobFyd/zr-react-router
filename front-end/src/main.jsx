@@ -21,8 +21,12 @@ const router = createBrowserRouter([
         element: <NotesList />,
         path: "/notes/:folderId",
         action: createNote,
-        shouldRevalidate: () => {
-          return false;
+        shouldRevalidate: ({ formAction }) => {
+          if (formAction === "/") {
+            return true;
+          } else {
+            return false;
+          }
         },
         loader: ({ params }) => {
           return fetch(
@@ -34,8 +38,12 @@ const router = createBrowserRouter([
             element: <Note />,
             path: "note/:noteId",
             action: updateNote,
-            shouldRevalidate: () => {
-              return false;
+            shouldRevalidate: ({ formAction }) => {
+              if (formAction) {
+                return false;
+              } else {
+                return true;
+              }
             },
             loader: ({ params }) => {
               return fetch(`http://localhost:3000/notes/${params.noteId}`);
