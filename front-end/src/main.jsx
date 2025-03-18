@@ -13,6 +13,13 @@ const router = createBrowserRouter([
     element: <App />,
     path: "/", // This is the root path
     action: createFolder,
+    shouldRevalidate: ({ formAction }) => {
+      if (formAction === "/") {
+        return true;
+      } else {
+        return false;
+      }
+    },
     loader: () => {
       return fetch("http://localhost:3000/folders");
     },
