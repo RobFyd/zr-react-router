@@ -10,6 +10,7 @@ import {
   NavLink,
   Outlet,
   Form,
+  redirect,
 } from "react-router-dom";
 
 const NotesContainer = ({ children }) => (
@@ -33,7 +34,11 @@ export function createNote({ params }) {
       body: "note content",
       folderId: Number(params.folderId),
     }),
-  });
+  })
+    .then((response) => response.json())
+    .then((newNote) => {
+      return redirect(`/notes/${newNote.folderId}/note/${newNote.id}`);
+    });
 }
 
 export function NotesList() {
