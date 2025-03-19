@@ -1,397 +1,45 @@
 {
-  "folders": [
-    {
-      "name": "Listy",
-      "id": 1
-    },
-    {
-      "name": "Przemyślenia",
-      "id": 2
-    },
-    {
-      "name": "new folder",
-      "id": 3
-    },
-    {
-      "name": "",
-      "id": 4
-    },
-    {
-      "name": "",
-      "id": 5
-    },
-    {
-      "name": "",
-      "id": 6
-    },
-    {
-      "name": "Document",
-      "id": 7
-    },
-    {
-      "name": "",
-      "id": 8
-    },
-    {
-      "name": "",
-      "id": 9
-    },
-    {
-      "name": "",
-      "id": 10
-    },
-    {
-      "name": "",
-      "id": 11
-    },
-    {
-      "name": "",
-      "id": 12
-    },
-    {
-      "name": "new",
-      "id": 13
-    },
-    {
-      "name": "grege",
-      "id": 14
-    },
-    {
-      "name": "",
-      "id": 15
-    }
-  ],
-  "archive": [],
-  "notes": [
-    {
-      "id": 5,
-      "folderId": 2,
-      "title": "Albert Einstein",
-      "body": "Learn from yesterday, live for today, hope for tomorrow. The important thing is not to stop questioning."
-    },
-    {
-      "id": 7,
-      "title": "Sun Tzu",
-      "folderId": 2,
-      "body": "Osiągnąć sto zwycięstw w stu bitwach nie jest szczytem umiejętności. Szczytem umiejętności jest pokonanie przeciwnika bez walki."
-    },
-    {
-      "title": "Lista zakupów na wakacje",
-      "body": "\nKup ubezpieczenie,\nKup bilety,\nZarezerwuj hotel\n",
-      "folderId": 1,
-      "id": 8
-    },
-    {
-      "title": "Lista zakupów",
-      "body": "\n1. Herbata,\n2. Ziemianki,\n 3. Woda gazowana\n",
-      "folderId": 1,
-      "id": 10
-    },
-    {
-      "title": "Kurs React - TODO",
-      "body": "\n1. Napisać odcinki\n2. Nargrać odcinki",
-      "folderId": 1,
-      "id": 15
-    },
-    {
-      "title": "New note",
-      "body": "note content",
-      "folderId": 2,
-      "id": 16
-    },
-    {
-      "title": "New note",
-      "body": "note content",
-      "folderId": 3,
-      "id": 17
-    },
-    {
-      "title": "New note",
-      "body": "note content",
-      "folderId": 3,
-      "id": 18
-    },
-    {
-      "title": "New note",
-      "body": "note content",
-      "folderId": 3,
-      "id": 19
-    },
-    {
-      "title": "New note",
-      "body": "note content",
-      "folderId": 4,
-      "id": 20
-    },
-    {
-      "title": "New notyyyy",
-      "body": "note content",
-      "folderId": 4,
-      "id": 21
-    },
-    {
-      "title": "New note",
-      "body": "note content",
-      "folderId": 4,
-      "id": 22
-    },
-    {
-      "title": "New note",
-      "body": "note content",
-      "folderId": 4,
-      "id": 23
-    },
-    {
-      "title": "New note",
-      "body": "note content",
-      "folderId": 4,
-      "id": 24
-    },
-    {
-      "title": "New note",
-      "body": "note content",
-      "folderId": 4,
-      "id": 25
-    },
-    {
-      "title": "te",
-      "body": "\ntent",
-      "folderId": 6,
-      "id": 26
-    },
-    {
-      "title": "Document",
-      "body": "Very new document!",
-      "folderId": 7,
-      "id": 27
-    },
-    {
-      "title": "New note",
-      "body": "note content",
-      "folderId": 1,
-      "id": 28
-    },
-    {
-      "title": "New note",
-      "body": "note content",
-      "folderId": 1,
-      "id": 29
-    },
-    {
-      "title": "New note",
-      "body": "note content",
-      "folderId": 7,
-      "id": 30
-    },
-    {
-      "title": "New note",
-      "body": "note content",
-      "folderId": 7,
-      "id": 31
-    },
-    {
-      "title": "New note",
-      "body": "note content",
-      "folderId": 7,
-      "id": 32
-    },
-    {
-      "title": "New note",
-      "body": "note content",
-      "folderId": 7,
-      "id": 33
-    },
-    {
-      "title": "New ",
-      "body": "",
-      "folderId": 3,
-      "id": 34
-    },
-    {
-      "title": "New note",
-      "body": "note content",
-      "folderId": 1,
-      "id": 35
-    },
-    {
-      "title": "New note",
-      "body": "note content",
-      "folderId": 1,
-      "id": 36
-    },
-    {
-      "title": "New note",
-      "body": "note content",
-      "folderId": 1,
-      "id": 37
-    },
-    {
-      "title": "New note",
-      "body": "note content",
-      "folderId": 1,
-      "id": 38
-    },
-    {
-      "title": "New note",
-      "body": "note content",
-      "folderId": 1,
-      "id": 39
-    },
-    {
-      "title": "New note",
-      "body": "note content",
-      "folderId": 8,
-      "id": 40
-    },
-    {
-      "title": "New note",
-      "body": "note content",
-      "folderId": 8,
-      "id": 41
-    },
-    {
-      "title": "New note",
-      "body": "note content",
-      "folderId": 13,
-      "id": 42
-    },
-    {
-      "title": "New note",
-      "body": "note content",
-      "folderId": 13,
-      "id": 43
-    },
-    {
-      "title": "New note",
-      "body": "note content",
-      "folderId": 13,
-      "id": 44
-    },
-    {
-      "title": "New note",
-      "body": "note content",
-      "folderId": 13,
-      "id": 45
-    },
-    {
-      "title": "New note",
-      "body": "note content",
-      "folderId": 13,
-      "id": 46
-    },
-    {
-      "title": "New note",
-      "body": "note content",
-      "folderId": 13,
-      "id": 47
-    },
-    {
-      "title": "New note",
-      "body": "note content",
-      "folderId": 13,
-      "id": 48
-    },
-    {
-      "title": "New note",
-      "body": "note content",
-      "folderId": 13,
-      "id": 49
-    },
-    {
-      "title": "New note",
-      "body": "note content",
-      "folderId": 13,
-      "id": 50
-    },
-    {
-      "title": "New note",
-      "body": "note content",
-      "folderId": 13,
-      "id": 51
-    },
-    {
-      "title": "New note",
-      "body": "note content",
-      "folderId": 13,
-      "id": 52
-    },
-    {
-      "title": "New note",
-      "body": "note content",
-      "folderId": 13,
-      "id": 53
-    },
-    {
-      "title": "New note",
-      "body": "note content",
-      "folderId": 13,
-      "id": 54
-    },
-    {
-      "title": "New note",
-      "body": "note content",
-      "folderId": 13,
-      "id": 55
-    },
-    {
-      "title": "New note",
-      "body": "note content",
-      "folderId": 13,
-      "id": 56
-    },
-    {
-      "title": "New note",
-      "body": "note content",
-      "folderId": 13,
-      "id": 57
-    },
-    {
-      "title": "New note",
-      "body": "note content",
-      "folderId": 14,
-      "id": 58
-    },
-    {
-      "title": "New note",
-      "body": "note content",
-      "folderId": 14,
-      "id": 59
-    },
-    {
-      "title": "New note",
-      "body": "note cont\n",
-      "folderId": 3,
-      "id": 60
-    },
-    {
-      "title": "New note",
-      "body": "note content",
-      "folderId": 2,
-      "id": 61
-    },
-    {
-      "title": "New note",
-      "body": "note content",
-      "folderId": 1,
-      "id": 62
-    },
-    {
-      "title": "New note",
-      "body": "note content",
-      "folderId": 3,
-      "id": 63
-    },
-    {
-      "title": "Ne",
-      "body": "note cont\n",
-      "folderId": 15,
-      "id": 64
-    },
-    {
-      "title": "",
-      "body": "\n",
-      "folderId": 15,
-      "id": 65
-    }
-  ]
+    "folders": [
+        {
+            "name": "Listy",
+            "id": 1
+        },
+        {
+            "name": "Przemyślenia",
+            "id": 2
+        }
+    ],
+    "archive": [],
+    "notes": [
+        {
+            "id": 5,
+            "folderId": 2,
+            "title": "Albert Einstein",
+            "body": "Learn from yesterday, live for today, hope for tomorrow. The important thing is not to stop questioning."
+        },
+        {
+            "id": 7,
+            "title": "Sun Tzu",
+            "folderId": 2,
+            "body": "Osiągnąć sto zwycięstw w stu bitwach nie jest szczytem umiejętności. Szczytem umiejętności jest pokonanie przeciwnika bez walki."
+        },
+        {
+            "title": "Lista zakupów na wakacje",
+            "body": "\nKup ubezpieczenie,\nKup bilety,\nZarezerwuj hotel\n",
+            "folderId": 1,
+            "id": 8
+        },
+        {
+            "title": "Lista zakupów",
+            "body": "\n1. Herbata,\n2. Ziemianki,\n 3. Woda gazowana\n",
+            "folderId": 1,
+            "id": 10
+        },
+        {
+            "title": "Kurs React - TODO",
+            "body": "\n1. Napisać odcinki\n2. Nargrać odcinki",
+            "folderId": 1,
+            "id": 15
+        }
+    ]
 }
