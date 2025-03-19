@@ -1,7 +1,7 @@
 import RemoveIcon from "../../assets/remove.svg";
 import styles from "./Note.module.css";
 import { TopBar } from "../top-bar/TopBar";
-import { Form, useLoaderData, useSubmit } from "react-router-dom";
+import { Form, useLoaderData, useSubmit, redirect } from "react-router-dom";
 
 const NoteEditor = ({ children }) => (
   <div className={styles["note-editor"]}>{children}</div>
@@ -17,6 +17,14 @@ export async function updateNote({ request, params }) {
     headers: {
       "Content-type": "application/json",
     },
+  });
+}
+
+export function deleteNote({ params }) {
+  return fetch(`http://localhost:3000/notes/${params.noteId}`, {
+    method: "DELETE",
+  }).then(() => {
+    return redirect(`/notes/${params.folderId}`);
   });
 }
 

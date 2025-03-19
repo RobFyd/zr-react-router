@@ -68,20 +68,8 @@
     {
       "title": "New note",
       "body": "note content",
-      "folderId": 7,
-      "id": 16
-    },
-    {
-      "title": "New note",
-      "body": "note content",
       "folderId": 6,
       "id": 17
-    },
-    {
-      "title": "New note",
-      "body": "note content",
-      "folderId": 2,
-      "id": 18
     }
   ]
 }
