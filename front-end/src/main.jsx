@@ -8,9 +8,9 @@ import { createFolder } from "./components/folders-list/FoldersList";
 import { createNote } from "./components/notes-list/NotesList";
 import { updateNote } from "./components/note/Note";
 
-const NotFound = () => (
-  <h1 style={{ textAlign: "center", marginTop: "50px" }}>404 - Not Found</h1>
-);
+// const NotFound = () => (
+//   <h1 style={{ textAlign: "center", marginTop: "50px" }}>404 - Not Found</h1>
+// );
 
 const router = createBrowserRouter([
   {
@@ -63,10 +63,10 @@ const router = createBrowserRouter([
       },
     ],
   },
-  {
-    path: "*",
-    element: <NotFound />,
-  },
+  // {
+  //   path: "*",
+  //   element: <NotFound />,
+  // },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

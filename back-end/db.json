@@ -31,6 +31,10 @@
     {
       "name": "new",
       "id": 8
+    },
+    {
+      "name": "",
+      "id": 9
     }
   ],
   "archive": [],
@@ -76,12 +80,6 @@
       "body": "note content",
       "folderId": 8,
       "id": 18
-    },
-    {
-      "title": "New note",
-      "body": "note content",
-      "folderId": 3,
-      "id": 19
     }
   ]
 }
