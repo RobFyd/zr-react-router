@@ -70,6 +70,18 @@
       "body": "note content",
       "folderId": 6,
       "id": 17
+    },
+    {
+      "title": "New note",
+      "body": "note content",
+      "folderId": 8,
+      "id": 18
+    },
+    {
+      "title": "New note",
+      "body": "note content",
+      "folderId": 3,
+      "id": 19
     }
   ]
 }
