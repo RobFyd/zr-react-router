@@ -2,11 +2,15 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { App } from "./App";
-import { NotesList } from "./components/notes-list/NotesList";
+import NotesList from "./components/notes-list/NotesList";
 import { deleteNote, Note } from "./components/note/Note";
 import { createFolder } from "./components/folders-list/FoldersList";
 import { createNote } from "./components/notes-list/NotesList";
 import { updateNote } from "./components/note/Note";
+
+const NotFound = () => (
+  <h1 style={{ textAlign: "center", marginTop: "50px" }}>404 - Not Found</h1>
+);
 
 const router = createBrowserRouter([
   {
@@ -58,6 +62,10 @@ const router = createBrowserRouter([
         ],
       },
     ],
+  },
+  {
+    path: "*",
+    element: <NotFound />,
   },
 ]);
 
