@@ -9,32 +9,12 @@
       "id": 2
     },
     {
-      "name": "new folder",
+      "name": "Nowy folder",
       "id": 3
     },
     {
-      "name": "grege",
+      "name": "Nowy folder 3",
       "id": 4
-    },
-    {
-      "name": "grege",
-      "id": 5
-    },
-    {
-      "name": "grege",
-      "id": 6
-    },
-    {
-      "name": "Document",
-      "id": 7
-    },
-    {
-      "name": "new",
-      "id": 8
-    },
-    {
-      "name": "",
-      "id": 9
     }
   ],
   "archive": [],
@@ -70,22 +50,34 @@
       "id": 15
     },
     {
-      "title": "New note",
-      "body": "note content",
-      "folderId": 6,
+      "title": "Nowa",
+      "body": "Tutaj wpiszotatki.",
+      "folderId": 3,
+      "id": 16
+    },
+    {
+      "title": "Nowa notatka",
+      "body": "Tutaj wpisz treść swojej notatki.",
+      "folderId": 4,
       "id": 17
     },
     {
-      "title": "New note",
-      "body": "note content",
-      "folderId": 8,
+      "title": "Nowa notatka",
+      "body": "Tutaj wpisz treść swojej notatki.",
+      "folderId": 4,
       "id": 18
     },
     {
-      "title": "New ",
-      "body": "",
-      "folderId": 8,
+      "title": "Nowa notatka",
+      "body": "Tutaj wpisz treść swojej notatki.",
+      "folderId": 4,
       "id": 19
+    },
+    {
+      "title": "Nowa notatka",
+      "body": "Tutaj wpisz treść swojej notatki.",
+      "folderId": 4,
+      "id": 20
     }
   ]
 }
