@@ -5,6 +5,25 @@ import { TopBar } from "../top-bar/TopBar";
 import { AddNewButton } from "../add-new-button/AddNewButton";
 import { Link, NavLink, useLoaderData, Form, redirect } from "react-router-dom";
 
+export async function createFolder(args) {
+  const data = await args.request.formData();
+  const folderName = data.get("folder-name");
+
+  return fetch("http://localhost:3000/folders", {
+    method: "POST",
+    body: JSON.stringify({ name: folderName }),
+    headers: {
+      "Content-type": "application/json",
+    },
+  })
+    .then((response) => {
+      return response.json();
+    })
+    .then((newFolder) => {
+      return redirect(`/notes/${newFolder.id}`);
+    });
+}
+
 const Folders = ({ children }) => (
   <div className={styles["folders-column"]}>{children}</div>
 );
@@ -13,22 +32,6 @@ const UserCreatedFolders = ({ children }) => (
     {children}
   </div>
 );
-
-export async function createFolder(args) {
-  const data = await args.request.formData();
-  const folderName = data.get("folder-name");
-  return fetch("http://localhost:3000/folders", {
-    method: "POST",
-    body: JSON.stringify({ name: folderName }),
-    headers: {
-      "Content-type": "application/json",
-    },
-  })
-    .then((response) => response.json())
-    .then((newFolder) => {
-      return redirect(`/notes/${newFolder.id}`);
-    });
-}
 
 const FoldersList = () => {
   const folders = useLoaderData();
