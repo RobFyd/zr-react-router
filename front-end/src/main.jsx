@@ -17,6 +17,9 @@ const router = createBrowserRouter([
     element: <App />,
     path: "/", // This is the root path
     action: createFolder,
+    loader: () => {
+      return fetch("http://localhost:3000/folders");
+    },
     shouldRevalidate: ({ formAction }) => {
       if (formAction === "/") {
         return true;
@@ -24,13 +27,11 @@ const router = createBrowserRouter([
         return false;
       }
     },
-    loader: () => {
-      return fetch("http://localhost:3000/folders");
-    },
+
     children: [
       {
-        element: <NotesList />,
         path: "/notes/:folderId",
+        element: <NotesList />,
         action: createNote,
         loader: ({ params }) => {
           return fetch(
@@ -39,18 +40,18 @@ const router = createBrowserRouter([
         },
         children: [
           {
-            element: <Note />,
             path: "note/:noteId",
+            element: <Note />,
             action: updateNote,
+            loader: ({ params }) => {
+              return fetch(`http://localhost:3000/notes/${params.noteId}`);
+            },
             shouldRevalidate: ({ formAction }) => {
               if (formAction) {
                 return false;
               } else {
                 return true;
               }
-            },
-            loader: ({ params }) => {
-              return fetch(`http://localhost:3000/notes/${params.noteId}`);
             },
             children: [
               {
