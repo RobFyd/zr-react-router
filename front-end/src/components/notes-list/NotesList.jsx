@@ -1,27 +1,15 @@
 import styles from "./NotesList.module.css";
-
 import { Title } from "../title/Title";
 import { AddNewButton } from "../add-new-button/AddNewButton";
 import { TopBar } from "../top-bar/TopBar";
 import { ShortNote } from "../short-note/ShortNote";
 import {
-  useParams,
   useLoaderData,
   NavLink,
   Outlet,
   Form,
   redirect,
 } from "react-router-dom";
-
-const NotesContainer = ({ children }) => (
-  <div className={styles["notes-container"]}>{children}</div>
-);
-
-const Notes = ({ children }) => (
-  <div className={styles["notes-list"]} role="list">
-    {children}
-  </div>
-);
 
 export function createNote({ params }) {
   return fetch("http://localhost:3000/notes", {
@@ -41,7 +29,17 @@ export function createNote({ params }) {
     });
 }
 
-export function NotesList() {
+const NotesContainer = ({ children }) => (
+  <div className={styles["notes-container"]}>{children}</div>
+);
+
+const Notes = ({ children }) => (
+  <div className={styles["notes-list"]} role="list">
+    {children}
+  </div>
+);
+
+const NotesList = () => {
   const notes = useLoaderData();
 
   return (
@@ -70,6 +68,6 @@ export function NotesList() {
       <Outlet />
     </NotesContainer>
   );
-}
+};
 
 export default NotesList;
