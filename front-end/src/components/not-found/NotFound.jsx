@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 export function NotFound() {
   return (
     <div className={styles["error-page"]}>
-      <h2>Strona nieznaleziona!</h2>
-      <p>Wpisano niepoprawny adres URL!</p>
-      <Link to="..">Wróć</Link>
+      <h2>Page not found!</h2>
+      <p>You entered an invalid URL!</p>
+      <Link to="..">Return</Link>
     </div>
   );
 }
