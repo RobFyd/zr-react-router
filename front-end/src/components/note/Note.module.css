@@ -33,8 +33,10 @@
 
 .note-editor textarea {
     display: block;
-    border: 0;
-    flex: 1;
+    border: 1px solid lightgray;
+    resize: vertical;
+    min-height: 150px;
+    padding: 10px;
 
     background-color: transparent;
     font-family: inherit;
