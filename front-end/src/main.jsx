@@ -40,22 +40,23 @@ const router = createBrowserRouter([
             path: `note/:noteId`,
             element: <Note />,
             action: updateNote,
+            shouldRevalidate: ({ formAction }) => {
+              if (formAction) {
+                return false;
+              } else {
+                return true;
+              }
+            },
+            errorElement: <NotFound />,
             loader: async ({ params }) => {
               const result = await fetch(
                 `http://localhost:3000/notes/${params.noteId}`
               );
 
               if (result.status === 404) {
-                throw new Error("Note not found");
+                throw new Error();
               } else {
                 return result.json();
-              }
-            },
-            shouldRevalidate: ({ formAction }) => {
-              if (formAction) {
-                return false;
-              } else {
-                return true;
               }
             },
             children: [
