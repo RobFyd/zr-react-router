@@ -4,11 +4,12 @@ import Layout from "./components/layout/Layout";
 import { Loader } from "./components/loader/Loader";
 
 export function App() {
-  const { state } = useNavigation();
+  const { state, formMethod } = useNavigation();
 
   return (
     <Layout>
-      {(state === "loading" || state === "submitting") && <Loader />}
+      {(state === "loading" || state === "submitting") &&
+        formMethod !== "patch" && <Loader />}
       <FoldersList />
       <Outlet />
     </Layout>
