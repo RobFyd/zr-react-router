@@ -62,6 +62,9 @@ const FoldersList = () => {
           </NavLink>
         ))}
       </UserCreatedFolders>
+      <NavLink to="/archive">
+        <Folder>Archives</Folder>
+      </NavLink>
     </Folders>
   );
 };
