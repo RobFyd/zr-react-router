@@ -35,6 +35,12 @@
       "body": "Write your note here",
       "folderId": "4",
       "id": 3
+    },
+    {
+      "title": "archive",
+      "body": "...",
+      "folderId": "4",
+      "id": 4
     }
   ],
   "notes": [
@@ -61,6 +67,18 @@
       "body": "1. do the task\n2. fix the bugs\n3. test the app\n",
       "folderId": 1,
       "id": 15
+    },
+    {
+      "title": "New note",
+      "body": "Write your note here",
+      "folderId": 3,
+      "id": 16
+    },
+    {
+      "title": "New note 2",
+      "body": "Write your note here",
+      "folderId": 4,
+      "id": 17
     }
   ]
 }
