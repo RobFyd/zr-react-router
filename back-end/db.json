@@ -17,7 +17,14 @@
       "id": 4
     }
   ],
-  "archive": [],
+  "archive": [
+    {
+      "title": null,
+      "body": null,
+      "folderId": null,
+      "id": 1
+    }
+  ],
   "notes": [
     {
       "id": 5,
@@ -32,14 +39,8 @@
       "body": "To achieve one hundred victories in one hundred battles is not the height of skill. The height of skill is to defeat the enemy without fighting."
     },
     {
-      "title": "Holiday Shopping List",
-      "body": "- insurance\n- tickets\n- Book a hotel\n\n\n",
-      "folderId": 1,
-      "id": 8
-    },
-    {
       "title": "Shopping List",
-      "body": "1. Tea,\n2. Potatoes,\n3. Water\n",
+      "body": "1. Tea\n2. Potatoes\n3. Water\n",
       "folderId": 1,
       "id": 10
     },
@@ -57,7 +58,7 @@
     },
     {
       "title": "New note :)",
-      "body": "Write your note here",
+      "body": "Write your note here :)",
       "folderId": 4,
       "id": 17
     }
