@@ -23,6 +23,12 @@
       "body": null,
       "folderId": null,
       "id": 1
+    },
+    {
+      "title": "New note :)",
+      "body": "Write your note here :)",
+      "folderId": "4",
+      "id": 2
     }
   ],
   "notes": [
@@ -55,12 +61,6 @@
       "body": "error!\n\n\n\n",
       "folderId": 3,
       "id": 16
-    },
-    {
-      "title": "New note :)",
-      "body": "Write your note here :)",
-      "folderId": 4,
-      "id": 17
     }
   ]
 }

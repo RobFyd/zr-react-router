@@ -67,7 +67,21 @@ const Note = () => {
   return (
     <div className={styles.container}>
       <TopBar>
-        <Form method="DELETE" action="delete">
+        <Form
+          method="DELETE"
+          action="delete"
+          onSubmit={(event) => {
+            event.preventDefault();
+            const formData = new FormData();
+            formData.append("title", note.title);
+            formData.append("body", note.body);
+            formData.append("folderId", note.folderId);
+            submit(formData, {
+              method: "DELETE",
+              action: "delete",
+            });
+          }}
+        >
           <button className={styles.button}>
             <img className={styles.image} src={RemoveIcon} />
           </button>
