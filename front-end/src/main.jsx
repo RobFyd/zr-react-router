@@ -25,6 +25,7 @@ const router = createBrowserRouter([
         return false;
       }
     },
+    errorElement: <NotFound />,
     children: [
       {
         path: "archive",
@@ -32,6 +33,28 @@ const router = createBrowserRouter([
         loader: () => {
           return fetch("http://localhost:3000/archive");
         },
+        children: [
+          {
+            path: `:noteId`,
+            element: <Note />,
+            action: updateNote,
+            errorElement: <NotFound />,
+            loader: async ({ params }) => {
+              const result = await fetch(
+                `http://localhost:3000/archive/${params.noteId}`
+              );
+
+              if (result.status === 404) {
+                throw new Error();
+              } else {
+                return result.json();
+              }
+            },
+            shouldRevalidate: ({ formAction }) => {
+              return !formAction;
+            },
+          },
+        ],
       },
       {
         path: "notes/:folderId",
@@ -47,13 +70,6 @@ const router = createBrowserRouter([
             path: `note/:noteId`,
             element: <Note />,
             action: updateNote,
-            shouldRevalidate: ({ formAction }) => {
-              if (formAction) {
-                return false;
-              } else {
-                return true;
-              }
-            },
             errorElement: <NotFound />,
             loader: async ({ params }) => {
               const result = await fetch(
@@ -64,6 +80,13 @@ const router = createBrowserRouter([
                 throw new Error();
               } else {
                 return result.json();
+              }
+            },
+            shouldRevalidate: ({ formAction }) => {
+              if (formAction) {
+                return false;
+              } else {
+                return true;
               }
             },
             children: [
