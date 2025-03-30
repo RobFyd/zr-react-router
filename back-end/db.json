@@ -23,6 +23,18 @@
       "body": "Write your note here",
       "folderId": "4",
       "id": 1
+    },
+    {
+      "title": "1",
+      "body": "Write your note here",
+      "folderId": "3",
+      "id": 2
+    },
+    {
+      "title": "2",
+      "body": "Write your note here",
+      "folderId": "4",
+      "id": 3
     }
   ],
   "notes": [
@@ -31,6 +43,12 @@
       "folderId": 2,
       "title": "Albert Einstein",
       "body": "Learn from yesterday, live for today, hope for tomorrow. The important thing is not to stop questioning."
+    },
+    {
+      "id": 7,
+      "title": "Sun Tzu",
+      "folderId": 2,
+      "body": "To achieve one hundred victories in one hundred battles is not the height of skill. The height of skill is to defeat the enemy without fighting."
     },
     {
       "title": "Shopping List",
@@ -43,132 +61,6 @@
       "body": "1. do the task\n2. fix the bugs\n3. test the app\n",
       "folderId": 1,
       "id": 15
-    },
-    {
-      "title": "new note",
-      "body": "error!\n\n\n\n",
-      "folderId": 3,
-      "id": 16
-    },
-    {
-      "title": "New note",
-      "body": "Write your note here",
-      "folderId": null,
-      "id": 17
-    },
-    {
-      "title": "New note",
-      "body": "Write your note here",
-      "folderId": null,
-      "id": 19
-    },
-    {
-      "title": "New note",
-      "body": "Write your note here",
-      "folderId": null,
-      "id": 20
-    },
-    {
-      "title": "New note",
-      "body": "Write your note here",
-      "folderId": null,
-      "id": 21
-    },
-    {
-      "title": "New note",
-      "body": "Write your note here",
-      "folderId": null,
-      "id": 22
-    },
-    {
-      "title": "New note",
-      "body": "Write your note here",
-      "folderId": null,
-      "id": 23
-    },
-    {
-      "title": "New note",
-      "body": "Write your note here",
-      "folderId": null,
-      "id": 24
-    },
-    {
-      "title": "New note",
-      "body": "Write your note here",
-      "folderId": null,
-      "id": 25
-    },
-    {
-      "title": "New note",
-      "body": "Write your note here",
-      "folderId": null,
-      "id": 26
-    },
-    {
-      "title": "New note",
-      "body": "Write your note here",
-      "folderId": null,
-      "id": 27
-    },
-    {
-      "title": "New note",
-      "body": "Write your note here",
-      "folderId": null,
-      "id": 28
-    },
-    {
-      "title": "New note",
-      "body": "Write your note here",
-      "folderId": null,
-      "id": 29
-    },
-    {
-      "title": "New note",
-      "body": "Write your note here",
-      "folderId": null,
-      "id": 30
-    },
-    {
-      "title": "New note",
-      "body": "Write your note here",
-      "folderId": null,
-      "id": 31
-    },
-    {
-      "title": "New note",
-      "body": "Write your note here",
-      "folderId": null,
-      "id": 32
-    },
-    {
-      "title": "New note",
-      "body": "Write your note here",
-      "folderId": null,
-      "id": 33
-    },
-    {
-      "title": "New note",
-      "body": "Write your note here",
-      "folderId": null,
-      "id": 34
-    },
-    {
-      "title": "New note",
-      "body": "Write your note here",
-      "folderId": null,
-      "id": 35
-    },
-    {
-      "title": "New note",
-      "body": "Write your note herehfngvfdhgnbv cfnhjd\n\n c",
-      "folderId": null,
-      "id": 36
-    },
-    {
-      "title": "New note",
-      "body": "Write your note here",
-      "folderId": 4,
-      "id": 37
     }
   ]
 }

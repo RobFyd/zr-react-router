@@ -55,7 +55,7 @@ const NotesList = () => {
           <NavLink
             key={note.id}
             to={
-              location.pathname === "/archive"
+              location.pathname.startsWith("/archive")
                 ? `/archive/note/${note.id}`
                 : `/notes/${note.folderId}/note/${note.id}`
             }
