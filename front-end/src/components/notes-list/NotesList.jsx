@@ -24,13 +24,6 @@ export function createNewNote({ params }) {
       body: "Write your note here",
       folderId: Number(params.folderId),
     }),
-    // })
-    //   .then((response) => {
-    //     return response.json();
-    //   })
-    //   .then((newNote) => {
-    //     return redirect(`/notes/${newNote.folderId}/note/${newNote.id}`);
-    //   });
   });
 }
 

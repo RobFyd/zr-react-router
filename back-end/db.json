@@ -163,6 +163,12 @@
       "body": "Write your note herehfngvfdhgnbv cfnhjd\n\n c",
       "folderId": null,
       "id": 36
+    },
+    {
+      "title": "New note",
+      "body": "Write your note here",
+      "folderId": 4,
+      "id": 37
     }
   ]
 }

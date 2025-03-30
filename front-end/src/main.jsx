@@ -35,7 +35,7 @@ const router = createBrowserRouter([
         },
         children: [
           {
-            path: `:noteId`,
+            path: `note/:noteId`,
             element: <Note />,
             action: updateNote,
             errorElement: <NotFound />,
