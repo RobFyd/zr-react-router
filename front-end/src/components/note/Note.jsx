@@ -1,4 +1,5 @@
 import RemoveIcon from "../../assets/remove.svg";
+import RestoreIcon from "../../assets/restore.svg";
 import styles from "./Note.module.css";
 import { TopBar } from "../top-bar/TopBar";
 import { useLoaderData, Form, useSubmit, redirect } from "react-router-dom";
