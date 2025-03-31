@@ -97,7 +97,11 @@ const Note = () => {
             });
           }}
         >
-          <button className={styles.button}>
+          <button
+            className={`${styles.button} ${
+              path.pathname.includes("archive") ? styles["align-right"] : ""
+            }`}
+          >
             <img className={styles.image} src={RemoveIcon} />
           </button>
         </Form>
