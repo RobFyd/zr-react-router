@@ -2,7 +2,13 @@ import RemoveIcon from "../../assets/remove.svg";
 import RestoreIcon from "../../assets/restore.svg";
 import styles from "./Note.module.css";
 import { TopBar } from "../top-bar/TopBar";
-import { useLoaderData, Form, useSubmit, redirect } from "react-router-dom";
+import {
+  useLoaderData,
+  Form,
+  useSubmit,
+  redirect,
+  useResolvedPath,
+} from "react-router-dom";
 import { useCallback } from "react";
 import { debounce } from "../../utilis/debounce";
 
@@ -56,6 +62,7 @@ export async function updateNote({ request, params }) {
 const Note = () => {
   const note = useLoaderData();
   const submit = useSubmit();
+  const path = useResolvedPath();
 
   const onChangeCallback = useCallback(
     debounce((event) => {
@@ -68,6 +75,13 @@ const Note = () => {
   return (
     <div className={styles.container}>
       <TopBar>
+        {path.pathname.includes("archive") && (
+          <Form>
+            <button className={styles.button}>
+              <img className={styles.image} src={RestoreIcon} />
+            </button>
+          </Form>
+        )}
         <Form
           method="DELETE"
           action="delete"
