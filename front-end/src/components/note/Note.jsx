@@ -105,16 +105,31 @@ const Note = () => {
     [debounce, submit]
   );
 
+  const restoreForm = (
+    <Form
+      onSubmit={(event) => {
+        event.preventDefault();
+        const formData = new FormData();
+        formData.append("title", note.title);
+        formData.append("body", note.body);
+        formData.append("folderId", note.folderId);
+
+        submit(formData, {
+          method: "POST",
+          action: "restore",
+        });
+      }}
+    >
+      <button className={styles.button}>
+        <img className={styles.image} src={RestoreIcon} />
+      </button>
+    </Form>
+  );
+
   return (
     <div className={styles.container}>
       <TopBar>
-        {path.pathname.includes("archive") && (
-          <Form>
-            <button className={styles.button}>
-              <img className={styles.image} src={RestoreIcon} />
-            </button>
-          </Form>
-        )}
+        {path.pathname.includes("archive") && restoreForm}
         <Form
           method="DELETE"
           action="delete"
