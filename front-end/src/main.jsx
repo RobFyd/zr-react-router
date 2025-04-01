@@ -3,7 +3,12 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { App } from "./App";
 import NotesList from "./components/notes-list/NotesList";
-import { deleteNote, Note } from "./components/note/Note";
+import {
+  deleteNote,
+  Note,
+  deleteNoteFromArchive,
+  restoreFromArchive,
+} from "./components/note/Note";
 import { createFolder } from "./components/folders-list/FoldersList";
 import { createNewNote } from "./components/notes-list/NotesList";
 import { updateNote } from "./components/note/Note";
@@ -53,6 +58,16 @@ const router = createBrowserRouter([
             shouldRevalidate: ({ formAction }) => {
               return !formAction;
             },
+            children: [
+              {
+                path: "delete",
+                action: deleteNoteFromArchive,
+              },
+              {
+                path: "restore",
+                action: restoreFromArchive,
+              },
+            ],
           },
         ],
       },
