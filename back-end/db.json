@@ -15,20 +15,18 @@
     {
       "name": "New folder 2",
       "id": 4
+    },
+    {
+      "name": "New folder 3",
+      "id": 5
     }
   ],
   "archive": [
     {
-      "title": "1",
-      "body": "Write your note here",
-      "folderId": "3",
-      "id": 2
-    },
-    {
-      "title": "2",
-      "body": "Write your note here",
-      "folderId": "4",
-      "id": 3
+      "title": "Joker",
+      "body": "Why so serious?",
+      "folderId": "2",
+      "id": 1
     }
   ],
   "notes": [
@@ -67,6 +65,18 @@
       "body": "Write your note here",
       "folderId": 4,
       "id": 17
+    },
+    {
+      "title": "Bill Clinton",
+      "body": "We all do better when we work together. Our differences do matter, but our common humanity matters more.",
+      "folderId": 2,
+      "id": 18
+    },
+    {
+      "title": "New note 3",
+      "body": "Write your note here",
+      "folderId": 5,
+      "id": 19
     }
   ]
 }
